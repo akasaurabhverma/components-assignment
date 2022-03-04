@@ -7,7 +7,7 @@ function App() {
   return (
     <div>
       {data.map((lists, index) => {
-        return <Card title={lists.title} list={lists.list} key={index} />;
+        return <Card {...lists} key={index} />;
       })}
     </div>
   );
